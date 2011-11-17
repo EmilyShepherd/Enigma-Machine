@@ -1,0 +1,76 @@
+==============
+ Coursework 2
+==============
+
+Alexander Shepherd
+ams2g11
+24559725
+
+This is my own work.
+
+
+Sections attempted:
+-------------------
+
+  + All main sections
+  + Code cracking
+  + Added Exceptions
+  + Graphical user interface
+
+
+Running the Program:
+--------------------
+
+  The Main class contains the program's main() method. Main
+  contains a field called DO, which main() use to decide
+  how to start the program:
+  
+  DO = NOTHING (0) : Program won't start
+  DO = GUI     (1) : Program will run Interface(), to create a GUI
+  DO = CRACK1  (2) : Crack challenge 1
+  DO = CRACK2  (3) : Crack challenge 2
+  DO = CRACK3  (4) : Crack challenge 3
+  
+  
+Code cracking:
+--------------
+
+  Method:
+    For these challenges I choose to crack them using
+    Brute Force. Although not the most elegant of
+    code cracking systems, it works in this case because
+    of the relatively few iterations required to
+    crack each challenge (see each challenge for number
+    of iterations).
+    
+    The BruteForceCracker class handles all challenges.
+    
+  Challenge 1:
+    DAISY, DAISY, GIVE ME YOUR ANSWER DO
+    
+  Challenge 2:
+  	WE'LL ALWAYS BE TOGETHER,
+    HOWEVER FAR IT SEEMS.
+    WE'LL ALWAYS BE TOGETHER,
+    TOGETHER IN ELECTRIC DREAMS.
+    
+  Challenge 3:
+    I LOVE COFFEE,
+    I LOVE TEA,
+    I LOVE THE JAVA JIVE,
+    AND IT LOVES ME.
+    
+GUI:
+----
+
+  I built a swing GUI for the EnigmaMachine. Users can
+  encode a message in 3 ways:
+  
+  1. Press each button manually
+  2. Type the mesage into the input box, and click "Encode!"
+     to see it being encoded.
+  3. Type the message into the input box and click
+     "Quick Encode" to encode the message without it flashing
+     
+  The rotor types / positions update as soon as their boxes
+  are changed (there is no "Update" button)
